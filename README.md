@@ -1,4 +1,4 @@
-# Only OpenCore EFI for HP Pavilion Gaming 15-ec2000nc
+# Only OpenCore EFI for HP Pavilion Gaming 15-ec2900nc
 ## Note: It is still in development due to various bugs and other errors.
 In the opencore-2024-........txt file is the OpenCore Log Dump from the last attempt to run it.
 

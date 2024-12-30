@@ -38,3 +38,42 @@ my device. So I guess.
 | SSDT-GPU-DISABLE | macOS from Mojave onwards does not support NVIDIA graphics. If you could install NVIDIA drivers, performance would be terrible and RTX wouldn't work anyway. |
 | SSDT-HPET | Simple and straightforward. Fixing IRQ signals. |
 | SSDT-PNLF | Again, plain and simple. Backlit keyboard. |
+
+# Drivers
+I left all the drivers as they were in the default settings,
+because I would like to modify something in the future and I don't want it to tell me erroros or cause problems again because of other things.
+
+# Kexts
+Kexts are my favorite part. I mean that in quotes, because sometimes getting all the kexts is hell,
+but sometimes it's a walk in the park. Just a little heads-up. All kexts, but also OpenCore itself in this EFI is in the Release.
+| Selected kexts | For a component |
+| -------------- | --------------- |
+| AppleALC       | Audio           |
+| AppleMCEReporterDisabler | Just a necessity that all AMD-based systems must have. That concerns me too. So. |
+| BrightnessKeys | Fix keyboard shortcuts to increase or decrease brightness. |
+| ECEnabler      | Battery Status  |
+| Lilu           | Just as a patching engine. A must have for anyone using OpenCore. |
+| NootedRed      | AMD Radeon Graphics |
+| NVMeFix        | NVMe |
+| RealtekRTL8111 | Ethernet |
+| SMCRadeonSensors | AMD Radeon Graphics |
+| UTBMap         | USB |
+| VirtualSMC     | A must-have for anyone who uses OpenCore but is not on a native Mac. |
+| VoodooI2C      | Touchpad |
+| VoodooI2CELAN  | Mouse and other things that support ELAN. |
+| VoodooI2CHID   | Various things and components using HID. |
+| VoodooPS2Controller | Keyboard |
+| WhateverGreen  | That's the basis for all graphics. |
+
+# Resources and Tools
+Again, I didn't change anything. Everything is as it was after the standard OpenCore extraction.
+And one more thing. The OpenCore version is 1.0.3 .
+
+# config.plist
+I configured it according to the instructions in the manual.
+
+# Finally
+That's about it.
+This was just supposed to be some "documentation" of my EFI,
+but I need to modify it so that macOS boots successfully,
+and not so that OpenCore gets stuck either on the ACPI tables or throws me a Kernel Panic.

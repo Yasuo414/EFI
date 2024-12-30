@@ -29,7 +29,7 @@ As well as listing the Kext versions and decompiled ACPI
 | Backlit keyboard with numeric part | N/A | N/A | N/A | Classic backlit PS/2 keyboard with numeric part |
 
 # SSDTs
-After much research into what SSDTs and DSDTs actually are, I used the SSDTs listed below.
+After some research on what SSDT and DSDT are and what they are actually for, I used the SSDTs listed below.
 If anyone is interested in using them in their own EFI, unfortunately they can't use them because I have customized them to
 my device. So I guess.
 | Selected SSDT | Why did I choose this |

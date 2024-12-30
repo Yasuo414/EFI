@@ -27,3 +27,14 @@ As well as listing the Kext versions and decompiled ACPI
 | Thunderbold / USB-C 3.2 | N/A | N/A | N/A | Version 3.2 . 5GB/s speed, can function as a normal USB (USB-A) and can power devices |
 | HDMI      | N/A | N/A | N/A | Maximum possible resolution 4096x2160, 60Hz frequency. Leads from dGPU. |
 | Backlit keyboard with numeric part | N/A | N/A | N/A | Classic backlit PS/2 keyboard with numeric part |
+
+# SSDTs
+After much research into what SSDTs and DSDTs actually are, I used the SSDTs listed below.
+If anyone is interested in using them in their own EFI, unfortunately they can't use them because I have customized them to
+my device. So I guess.
+| Selected SSDT | Why did I choose this |
+| ------------- | --------------------- |
+| SSDT-EC-USBX  | macOS needs some EC controllers. Without them, it wouldn't even boot. |
+| SSDT-GPU-DISABLE | macOS from Mojave onwards does not support NVIDIA graphics. If you could install NVIDIA drivers, performance would be terrible and RTX wouldn't work anyway. |
+| SSDT-HPET | Simple and straightforward. Fixing IRQ signals. |
+| SSDT-PNLF | Again, plain and simple. Backlit keyboard. |

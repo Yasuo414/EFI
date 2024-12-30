@@ -24,4 +24,6 @@ As well as listing the Kext versions and decompiled ACPI
 | Bluetooth | Realtek Wireless Bluetooth Adapter | USB\VID_0BDA&PID_2852&REV_0000 | \_SB.PCI0.GP17.XHC0.RHUB.PRT4 | Bluetooth version is 5.2 |
 | Ethernet  | Realtek Gaming GbE Family Controller | PCI\VEN_10EC&DEV_8168&SUBSYS_88DE103C&REV_16 | \_SB.PCI0.GPP1.XPDV | If I'm not mistaken, the speed should be either 1GB/s or 10GB/s |
 | SD Card Reader | Alcorlink USB 2.0 Card Reader | USB\VID_058F&PID_6366&REV_0100 | \_SB.PCI0.GP17.XHC1.RHUB.PRT4 | N/A |
-| Thunderbold / USB-C | N/A |
+| Thunderbold / USB-C 3.2 | N/A | N/A | N/A | Version 3.2 . 5GB/s speed, can function as a normal USB (USB-A) and can power devices |
+| HDMI      | N/A | N/A | N/A | Maximum possible resolution 4096x2160, 60Hz frequency. Leads from dGPU. |
+| Backlit keyboard with numeric part | N/A | N/A | N/A | Classic backlit PS/2 keyboard with numeric part |
